@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test_style.css">
+</head>
+
+<body>
+    <div class="wedding-invitation">
+        <!-- Заглавная секция -->
+        <section class="header-section">
+            <h1 class="couple-names">ИГОРЬ И ЕКАТЕРИНА</h1>
+            <div class="heart-img">
+                <img src="img/heart.svg">
+            </div>
+            <div class="wedding-title">Мы женимся!</div>
+            <div class="wedding-date">26 | 06 | 26</div>
+            
+            <div class="photos">
+                <img src="img/1.jpg">
+                <img src="img/2.jpg">
+                <img src="img/3.jpg">
+                <img src="img/4.jpg">
+            </div>
+            
+            <p class="invitation-text">
+                Если Вы получили эту ссылочку от одного из нас, значит мы будем невероятно счастливы разделить этот день
+                в Вашей компании.
+            </p>
+            
+            <div class="heart-img">
+                <img src="img/heart.svg">
+            </div>
+        </section>
+
+        <!-- Секция обратного отсчета -->
+        <section class="countdown">
+            <h2>До свадьбы осталось</h2>
+            <div id="timer"></div>
+        </section>
+
+        <!-- Секция календаря -->
+        <section class="calendar-section">
+            <h2 class="section-title">Дата бракосочетания</h2>
+            <div class="month-year">июнь | 2026</div>
+            
+            <table class="calendar">
+                <tr>
+                    <th>Пн</th>
+                    <th>Вт</th>
+                    <th>Ср</th>
+                    <th>Чт</th>
+                    <th>Пт</th>
+                    <th>Сб</th>
+                    <th>Вс</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td class="wedding-day">26</td>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Секция места проведения -->
+        <section class="location">
+            <div class="info-block">
+                <h2 class="section-timing">Место проведения</h2>
+                <p class="place">
+                    Санаторий PARUS medical resort & SPA <br>
+                    Банкетный зал "White hall"
+                </p>
+                <img class="place-img" src="img/wh-1.jpg">
+                <p class="address">
+                    Новосибирская область,<br>
+                    д.п. Кудряшовский, ул. Береговая, 56
+                </p>
+                <div id="yandex-map"></div>
+                <a class="button" href="https://yandex.ru/maps/-/CLTdJDzB" target="_blank">Проложить маршрут</a>
+            </div>
+        </section>
+
+        <!-- Секция тайминга -->
+        <section class="timing">
+            <div class="info-block">
+                <h2 class="section-title">Тайминг</h2>
+                
+                <p class="timing-item">
+                    <span class="time">14:00</span>
+                    <span class="time-title">Сбор гостей, фуршет</span>
+                </p>
+                <p>
+                    <span class="time">16:00</span>
+                    <span class="time-title">Церемония</span>
+                </p>
+                <p>
+                    <span class="time">18:00</span>
+                    <span class="time-title">Банкет</span>
+                </p>
+            </div>
+            <div class="heart-img">
+                <img src="img/heart.svg">
+            </div>
+        </section>
+
+        <!-- Секция дресс-кода -->
+        <section class="dress-code">
+            <div class="info-block">
+                <h2 class="section-title">Дресс-код</h2>
+                <p class="dress-code-description">
+                    Мы очень ждем и с удовольствием готовимся к нашему дню. Будет здорово, если своими нарядами вы
+                    поддержите палитру нашей свадьбы.
+                </p>
+                
+                <div class="colors">
+                    <span class="c1"></span>
+                    <span class="c2"></span>
+                    <span class="c3"></span>
+                    <span class="c4"></span>
+                    <span class="c5"></span>
+                    <span class="c6"></span>
+                    <span class="c7"></span>
+                    <span class="c8"></span>
+                    <span class="c9"></span>
+                    <span class="c10"></span>
+                    <span class="c11"></span>
+                    <span class="c12"></span>
+                    <span class="c13"></span>
+                    <span class="c14"></span>
+                    <span class="c15"></span>
+                </div>
+                
+                <p>Также просим Вас воздержаться от белого цвета, холодных оттенков и ярких кричащих нарядов для
+                    сохранения атмосферы нашего праздника</p>
+            </div>
+        </section>
+
+        <!-- Секция подтверждения -->
+<section class="Questions">
+    <div id="question-block" class="info-block">
+        <h2 class="section-title">Вы придете?</h2>
+        <p>
+            Мы будем очень рады видеть вас на нашем торжестве! <br>
+            Пожалуйста, подтвердите свое присутствие, заполнив форму ниже 
+        </p>
+        
+        <!-- Форма опроса -->
+        <form id="guest-form" class="survey-form">
+            <div class="form-group">
+                <label>1. Вы придете? <span class="required">*</span></label>
+                <div class="radio-group">
+                    <label><input type="radio" name="attendance" value="Да" required> Да</label>
+                    <label><input type="radio" name="attendance" value="Нет" required> Нет</label>
+                    <label><input type="radio" name="attendance" value="Не уверен" required> Не уверен, сообщу позже</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>2. Потребуется ли трансфер до площадки? <span class="required">*</span></label>
+                <div class="radio-group">
+                    <label><input type="radio" name="transfer" value="Да" required> Да</label>
+                    <label><input type="radio" name="transfer" value="Нет" required> Нет</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>3. От какой станции метро будет удобно организовать трансфер?</label>
+                <select name="metro_station" class="form-select">
+                    <option value="Не нужен трансфер">Не нужен трансфер</option>
+                    <option value="Красный проспект/Сибирская">Красный проспект/Сибирская</option>
+                    <option value="Заельцовская">Заельцовская</option>
+                    <option value="Гагаринская">Гагаринская</option>
+                    <option value="Маршала Покрышкина">Маршала Покрышкина</option>
+                    <option value="Березовая роща">Березовая роща</option>
+                    <option value="Золотая нива">Золотая нива</option>
+                    <option value="Октябрьская">Октябрьская</option>
+                    <option value="Речной вокзал">Речной вокзал</option>
+                    <option value="Студенческая">Студенческая</option>
+                    <option value="Площадь Маркса">Площадь Маркса</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>4. Пожелания по алкоголю <span class="required">*</span></label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="alcohol" value="Не буду пить"> Не буду пить</label>
+                    <label><input type="checkbox" name="alcohol" value="Вино красное"> Вино красное</label>
+                    <label><input type="checkbox" name="alcohol" value="Вино белое"> Вино белое</label>
+                    <label><input type="checkbox" name="alcohol" value="Шампанское"> Шампанское</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>5. Комментарии или дополнительные пожелания</label>
+                <textarea name="comments" class="form-textarea" rows="3" placeholder="Ваши пожелания..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>6. Имя <span class="required">*</span></label>
+                <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
+            </div>
+
+            <button type="submit" class="submit-button">Отправить ответ</button>
+        </form>
+    </div>
+
+    <div id="thank-you-block" class="info-block" style="display: none;">
+        <h2 class="section-title">Спасибо за ответы!</h2>
+        <p>
+            Ваши ответы успешно отправлены.<br>
+            Будем ждать вас на нашем торжестве!
+        </p>
+    </div>
+
+    <div class="heart-img">
+        <img src="img/heart.svg">
+    </div>
+</section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+</body>
+
+</html>

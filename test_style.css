@@ -1,0 +1,221 @@
+/* ============================================
+   БАЗОВЫЕ СТИЛИ
+============================================ */
+
+/* Общие стили для всего приглашения */
+.wedding-invitation {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Стили для body */
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Общие стили для секций */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* ============================================
+   АДАПТИВНЫЕ СТИЛИ
+============================================ */
+
+/* Для ПК (ширина экрана больше 768px) */
+@media (min-width: 768px) {
+    body {
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .wedding-invitation {
+        max-width: 480px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Для очень больших экранов */
+@media (min-width: 1200px) {
+    .wedding-invitation {
+        max-width: 500px;
+    }
+}
+
+/* ============================================
+   ШАПКА (HEADER SECTION)
+============================================ */
+
+/* Контейнер с фотографиями */
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.photos img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Стили для сердечек */
+.heart-img img {
+    width: 10%;
+    height: auto;
+}
+
+/* ============================================
+   СЕКЦИЯ ОБРАТНОГО ОТСЧЕТА
+============================================ */
+
+.countdown {
+    background: #fff;
+}
+
+#timer {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* ============================================
+   СЕКЦИЯ КАЛЕНДАРЯ
+============================================ */
+
+.calendar-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Календарь */
+.calendar {
+    margin: 20px auto;
+    border-collapse: collapse;
+    max-width: 350px;
+    width: auto;
+}
+
+/* Заголовки дней недели */
+.calendar th {
+    text-align: center;
+    padding: 10px 8px;
+    font-size: 14px;
+    color: #666;
+    width: 40px;
+}
+
+/* Ячейки с датами */
+.calendar td {
+    text-align: center;
+    padding: 10px 8px;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+/* Месяц и год над календарем */
+.month-year {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* День свадьбы */
+.calendar .wedding-day {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.calendar .wedding-day::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    border: 2px dashed #ff6b6b;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: pulse 2s infinite;
+}
+
+/* ============================================
+   СЕКЦИЯ МЕСТА ПРОВЕДЕНИЯ
+============================================ */
+
+/* Изображение места */
+.place-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Карта */
+#yandex-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* ============================================
+   СЕКЦИЯ ДРЕСС-КОДА
+============================================ */
+
+/* Цветовая палитра */
+.colors {
+    display: grid;
+    grid-template-columns: repeat(5, 24px);
+    grid-template-rows: repeat(2, 24px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.colors span {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Цвета палитры */
+.c1 { background: #b6a8a2; }
+.c2 { background: #471914; }
+.c3 { background: #0f1e1d; }
+.c4 { background: #3f2920; }
+.c5 { background: #070f05; }
+.c6 { background: #a1937e; }
+.c7 { background: #594836; }
+.c8 { background: #4d1519; }
+.c9 { background: #301413; }
+.c10 { background: #170704; }
+.c11 { background: #795d4c; }
+.c12 { background: #6f6a61; }
+.c13 { background: #4d0a18; }
+.c14 { background: #341515; }
+.c15 { background: #aca494; }
